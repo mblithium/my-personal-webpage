@@ -1,0 +1,30 @@
+.headerNavbar {
+    background-color: var(--primary-color);
+    min-height: 50px;
+    display: block;
+    text-align: center;
+    position: sticky;
+    display:block;
+    padding: 10px;
+}
+
+.headerNavbarItem {
+    margin: auto;
+    display: inline-block;
+    background-color: var(--primary-color);
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+.headerNavbarItem a {
+    text-decoration: none;
+    color: var(--text-link-color);
+}
+
+.headerNavbarItem:hover {
+    color: var(--text-link-color);
+    background-color: var(--headerbar-btn-hover);
+    font-weight: bolder;
+}
+
