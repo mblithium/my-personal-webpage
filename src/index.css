@@ -19,7 +19,7 @@
 }
 :root {
     /* Paleta de cores */
-    --page-bg-color: #414040;
+    --page-bg-color: white; /* #d6d6d6 */
     --primary-color: #ecf0f1;
     --text-link-color: rgb(29, 27, 27);
     --headerbar-btn-hover: #d6d6d6;

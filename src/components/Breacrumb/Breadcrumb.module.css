@@ -1,0 +1,9 @@
+.breadcrumb {
+    margin: 20px 20px;
+}
+
+.breadcrumbitem {
+    background-color: #ecf0f1;
+    padding: 10px;
+    border-radius: 4px;
+}

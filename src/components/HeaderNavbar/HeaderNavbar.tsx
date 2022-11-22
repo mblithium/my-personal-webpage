@@ -3,6 +3,7 @@ import styles from "./HeaderNavbar.module.css";
 function HeaderNavbar(props:any) {
     return(
         <nav id="header-navbar" className={`${styles.headerNavbar}`}>
+
             <div className={`${styles.headerNavbarItem}`}>
                 <a href="#">Home</a>
             </div>

@@ -1,16 +1,34 @@
+import { useEffect, useState } from "react";
 import styles from "./Main.module.css";
 import Header from "../Header/Header";
+import MarkdowView from 'react-showdown';
+import axios from 'axios';
+import Breadcrumb from "../Breacrumb/Breadcrumb";
 
 function Main() {
+    const profileurl = "https://raw.githubusercontent.com/mblithium/mblithium/main/README.md";
+    const [profile, setProfile] = useState('');
+
+    const getUserGithubProfile = () => { 
+        axios.get(profileurl)
+        .then((response) => {
+            console.log(response.data);
+            setProfile(response.data);
+        });
+    };
+
+    useEffect(() => getUserGithubProfile(), []);
+
     return (
       <main className={`${styles.main}`}>
         <Header></Header>
+        <Breadcrumb path={["Homepage"]}></Breadcrumb>
         <article className={`${styles.main_article}`}>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste laborum maxime quibusdam eius tempore omnis dolores doloremque id quis natus cupiditate doloribus quidem nam et non ullam sed, nemo voluptas? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores tempore aut provident officiis! Voluptates cupiditate illo voluptate aliquam temporibus tempora laborum tempore fugiat, atque fuga similique neque omnis a vitae. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident repellat velit rem fugit neque culpa dolores, harum dignissimos enim earum expedita perferendis id ab odit iusto incidunt, libero nihil quod. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste laborum maxime quibusdam eius tempore omnis dolores doloremque id quis natus cupiditate doloribus quidem nam et non ullam sed, nemo voluptas? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores tempore aut provident officiis! Voluptates cupiditate illo voluptate aliquam temporibus tempora laborum tempore fugiat, atque fuga similique neque omnis a vitae. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident repellat velit rem fugit neque culpa dolores, harum dignissimos enim earum expedita perferendis id ab odit iusto incidunt, libero nihil quod. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste laborum maxime quibusdam eius tempore omnis dolores doloremque id quis natus cupiditate doloribus quidem nam et non ullam sed, nemo voluptas? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores tempore aut provident officiis! Voluptates cupiditate illo voluptate aliquam temporibus tempora laborum tempore fugiat, atque fuga similique neque omnis a vitae. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident repellat velit rem fugit neque culpa dolores, harum dignissimos enim earum expedita perferendis id ab odit iusto incidunt, libero nihil quod. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste laborum maxime quibusdam eius tempore omnis dolores doloremque id quis natus cupiditate doloribus quidem nam et non ullam sed, nemo voluptas? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores tempore aut provident officiis! Voluptates cupiditate illo voluptate aliquam temporibus tempora laborum tempore fugiat, atque fuga similique neque omnis a vitae. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident repellat velit rem fugit neque culpa dolores, harum dignissimos enim earum expedita perferendis id ab odit iusto incidunt, libero nihil quod. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste laborum maxime quibusdam eius tempore omnis dolores doloremque id quis natus cupiditate doloribus quidem nam et non ullam sed, nemo voluptas? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores tempore aut provident officiis! Voluptates cupiditate illo voluptate aliquam temporibus tempora laborum tempore fugiat, atque fuga similique neque omnis a vitae. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident repellat velit rem fugit neque culpa dolores, harum dignissimos enim earum expedita perferendis id ab odit iusto incidunt, libero nihil quod. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste laborum maxime quibusdam eius tempore omnis dolores doloremque id quis natus cupiditate doloribus quidem nam et non ullam sed, nemo voluptas? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores tempore aut provident officiis! Voluptates cupiditate illo voluptate aliquam temporibus tempora laborum tempore fugiat, atque fuga similique neque omnis a vitae. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident repellat velit rem fugit neque culpa dolores, harum dignissimos enim earum expedita perferendis id ab odit iusto incidunt, libero nihil quod. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste laborum maxime quibusdam eius tempore omnis dolores doloremque id quis natus cupiditate doloribus quidem nam et non ullam sed, nemo voluptas? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores tempore aut provident officiis! Voluptates cupiditate illo voluptate aliquam temporibus tempora laborum tempore fugiat, atque fuga similique neque omnis a vitae. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident repellat velit rem fugit neque culpa dolores, harum dignissimos enim earum expedita perferendis id ab odit iusto incidunt, libero nihil quod. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste laborum maxime quibusdam eius tempore omnis dolores doloremque id quis natus cupiditate doloribus quidem nam et non ullam sed, nemo voluptas? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores tempore aut provident officiis! Voluptates cupiditate illo voluptate aliquam temporibus tempora laborum tempore fugiat, atque fuga similique neque omnis a vitae. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident repellat velit rem fugit neque culpa dolores, harum dignissimos enim earum expedita perferendis id ab odit iusto incidunt, libero nihil quod.Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste laborum maxime quibusdam eius tempore omnis dolores doloremque id quis natus cupiditate doloribus quidem nam et non ullam sed, nemo voluptas? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores tempore aut provident officiis! Voluptates cupiditate illo voluptate aliquam temporibus tempora laborum tempore fugiat, atque fuga similique neque omnis a vitae. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident repellat velit rem fugit neque culpa dolores, harum dignissimos enim earum expedita perferendis id ab odit iusto incidunt, libero nihil quod.</p>
+            <MarkdowView markdown={profile}></MarkdowView>
         </article>
       </main>
     )
   }
   
-  export default Main;
+export default Main;
   
