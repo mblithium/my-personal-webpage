@@ -1,8 +1,8 @@
 .main {
     background-color: white;
-    max-width: 1200px;
-    min-width: 320px;
-    min-height: 100vh;
+    max-width: var(--max-view-app-width);
+    min-width: var(--min-view-app-width);
+    min-height: var(--min-view-app-height);
     margin: auto;
 }
 

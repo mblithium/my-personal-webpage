@@ -5,7 +5,7 @@ function Breadcrumb(props:any) {
         <div id="breadcrumb" className={styles.breadcrumb}>
             {
                 props.path.map((item:any, index:Number) => {
-                    return <span className={styles.breadcrumbitem}>{item}</span>
+                    return <span className={styles.breadcrumbitem}key={item}>/{item}</span>
                 })
             }
         </div>
