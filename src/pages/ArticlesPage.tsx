@@ -1,13 +1,13 @@
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
+import { Link } from 'react-router-dom';
+import axios from 'axios';
 import Breadcrumb from '../components/Breacrumb/Breadcrumb';
 import Footer from '../components/Footer/Footer';
 import Header from '../components/Header/Header';
 import Main from "../components/Main/Main";
 import MainArticle from '../components/MainArticle/MainArticle';
-import axios from 'axios';
-import { Link } from 'react-router-dom';
-
+import UpButton from '../components/UpButton/UpButton';
 
 function ArticlesPage() {
     const blankArticle:string = "Teste";
@@ -43,7 +43,6 @@ function ArticlesPage() {
 
                     <p>Esta página ainda está sendo desenvolvida...</p>
                 
-                    {/*JSON.stringify(article)*/}
                     <ul>
                     {
                         article.posts.map((item:any, index:any) => {
@@ -54,6 +53,7 @@ function ArticlesPage() {
                 </MainArticle>
            </Main>
            <Footer></Footer>
+           <UpButton />
         </div>
     )
 }

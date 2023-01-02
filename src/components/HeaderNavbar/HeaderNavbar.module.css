@@ -22,6 +22,11 @@
     color: var(--text-link-color);
 }
 
+.headerNavbarItem {
+    color: var(--text-link-color);
+    background-color: var(--headerbar-btn);
+    font-weight: bolder;
+}
 .headerNavbarItem:hover {
     color: var(--text-link-color);
     background-color: var(--headerbar-btn-hover);

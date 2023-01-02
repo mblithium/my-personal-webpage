@@ -4,6 +4,9 @@
     min-width: var(--min-view-app-width);
     min-height: var(--min-view-app-height);
     margin: auto;
+    -webkit-box-shadow: 0px 0px 33px 7px rgba(66,66,66,0.39);
+    -moz-box-shadow: 0px 0px 33px 7px rgba(66,66,66,0.39);
+    box-shadow: 0px 0px 33px 7px rgba(66,66,66,0.39);
 }
 
 .main_article {

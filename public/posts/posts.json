@@ -4,5 +4,17 @@
         "Archive": "where-learn-dev",
         "Description": "Aprenda programação e desenvolvimento nesse guia de conteúdos.",
         "Date": "26/11/2022"
+    },
+    {
+        "Title": "Caminhos de sistema do Linux",
+        "Archive": "linux-system-path",
+        "Description": "Aprenda sobre os caminhos de diretórios do linux.",
+        "Date": "23/12/2022"
+    },
+    {
+        "Title": "ReactJS com neocities",
+        "Archive": "neocities-with-reactjs",
+        "Description": "Usando ReactJS no neocities.",
+        "Date": "23/12/2022"
     }]
 }

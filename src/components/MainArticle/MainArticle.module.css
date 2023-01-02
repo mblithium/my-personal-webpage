@@ -1,3 +1,7 @@
 .mainArticle {
     padding: 15px;
 }
+
+.mainArticle p {
+    text-align: justify;
+}

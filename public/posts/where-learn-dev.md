@@ -14,11 +14,11 @@ Aqui neste artigo, irei listar uma série de conteúdos gratuitos pela internet,
 
 # Trilhas e Cursos
 
-- **__Universidade Brasileira Livre__**- Ciência da Computação: Um repositório no Github que organiza cursos e conteúdos gratuitos na internet em um currículo de Ciência da Computação. Não pense que será fácil, estudar autodidata demanda disciplina, persistência, curiosidade e muita prática. Aqui é organizado os conteúdos para ter uma trilha de onde ir e o que estudar.
-- Rocketseat Discover: Focado em desenvolvimento web, são trilhas de vídeos gratuitos, como um curso, onde é possível aprender desenvolvimento web através deles, um passo de cada vez.
-- ***DIO.me***: A DIO.me é uma comunidade colaborativa gratuita com mais de setecentos (700) mil desenvolvedores de software. Há vários cursos gratuitos, artigos, live coding e comunidades interessantes.
+- **<a href="https://ulivre.dev/" target="_blank">Universidade Brasileira Livre</a>**- Ciência da Computação: Um repositório no Github que organiza cursos e conteúdos gratuitos na internet em um currículo de Ciência da Computação. Não pense que será fácil, estudar autodidata demanda disciplina, persistência, curiosidade e muita prática. Aqui é organizado os conteúdos para ter uma trilha de onde ir e o que estudar.
+- <a href="https://www.rocketseat.com.br/discover" target="_blank">Rocketseat Discover</a>: Focado em desenvolvimento web, são trilhas de vídeos gratuitos, como um curso, onde é possível aprender desenvolvimento web através deles, um passo de cada vez.
+- **<a href="https://www.dio.me/" tartget="_blank">DIO.me</a>**: A DIO.me é uma comunidade colaborativa gratuita com mais de setecentos (700) mil desenvolvedores de software. Há vários cursos gratuitos, artigos, live coding e comunidades interessantes.
 - TrilhaInfo: é um site que reúne trilhas para aprendizado de desenvolvimento web, como frontend, backend, devops.
-- ***CodeIOT***: Uma iniciativa SAMSUNG e LSITEC, que oferece vídeos cursos gratuitos de IOT, programação e eletrônica básica.
+- **<a href="https://codeiot.org.br/" target="_blank">CodeIOT</a>**: Uma iniciativa SAMSUNG e LSITEC, que oferece vídeos cursos gratuitos de IOT, programação e eletrônica básica.
 
 # JavaScript
 

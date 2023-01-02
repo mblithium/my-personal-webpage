@@ -1,13 +1,14 @@
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { Link } from 'react-router-dom';
+import axios from 'axios';
+import MarkdownView from 'react-showdown';
 import Breadcrumb from '../components/Breacrumb/Breadcrumb';
 import Footer from '../components/Footer/Footer';
 import Header from '../components/Header/Header';
 import Main from "../components/Main/Main";
 import MainArticle from '../components/MainArticle/MainArticle';
-import axios from 'axios';
-import MarkdownView from 'react-showdown';
+import UpButton from '../components/UpButton/UpButton';
 
 
 
@@ -46,6 +47,7 @@ function Posts() {
                 </MainArticle>
            </Main>
            <Footer></Footer>
+           <UpButton />
         </div>
     )
 }
